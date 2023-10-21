@@ -1,0 +1,149 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.86), #000000);
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 450px;
+    height: 550px;
+    margin-top: 100px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+    box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.285);
+}
+
+.logo-liveseo {
+    width: 200px;
+    margin-top: 35px;
+}
+
+.form__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.inputbox {
+    position: relative;
+    width: 196px;
+    margin: 10px 0;
+}
+  
+.inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #000000;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+  
+.inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #000000;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+}
+  
+.inputbox input:valid ~span,
+.inputbox input:focus ~span {
+    color: #ed7b17;
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0,75em;
+}
+  
+.inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #ed7b17;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+  
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+    height: 44px;
+}
+
+.senha {
+    margin: 40px 0;
+}
+
+.botao-login {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000000;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #ed7b17;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #000000b3;
+}
+  
+.botao-login:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #db6b09;
+}
+  
+.botao-login:active {
+    transform: scale(0.9);
+}
+  
+.naoTenhoConta {
+    text-decoration: none;
+    color: #565656;
+}
+
+.naoTenhoConta:hover {
+    color: #025522;
+    text-decoration: underline;
+}

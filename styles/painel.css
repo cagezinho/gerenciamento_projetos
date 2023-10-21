@@ -1,0 +1,465 @@
+:root {
+    --font-principal: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-principal);
+    display: flex;
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.86), #292828d2);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbarText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-saudacoes {
+    font-size: 18pt;
+    font-weight: 600;
+    margin: auto;
+}
+  
+.sair {
+    background-color: rgb(212, 112, 112);
+}
+
+#img-logout {
+    width: 21px;
+    height: 17px;
+}
+/* ------------------------------------------------------------------- */
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-list {
+    margin: 20px 8px 10px 8px;
+    width: 1300px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.container-head {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin: 20px 0 20px 30px;
+}
+
+.container-body {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row-projetos {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+/* card */
+
+.card {
+    width: 280px;
+    height: 300px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.351);
+}
+
+.card-img-top {
+    height: 110px;
+    width: 140px;
+    margin: auto;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* Botão Edit do Card */
+
+.Btn {
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ width: 120px;
+ height: 40px;
+ border: none;
+ padding: 0px 20px;
+ background-color: rgb(255, 140, 0);
+ color: rgb(0, 0, 0);
+ font-weight: 500;
+ cursor: pointer;
+ border-radius: 10px;
+ box-shadow: 5px 5px 0px rgb(255, 111, 0);
+ transition-duration: .3s;
+}
+  
+.svg {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: rgb(0, 0, 0);
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover {
+    color: transparent;
+  }
+  
+  .Btn:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+  }
+  
+  .Btn:active {
+    transform: translate(3px , 3px);
+    transition-duration: .3s;
+    box-shadow: 2px 2px 0px rgb(140, 32, 212);
+  }
+
+.link-codice-img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Modal - Notas */
+
+.notas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botão fechar modal - Notas */
+
+.noselect {
+    width: 120px;
+    height: 37px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+   }
+   
+   .noselect, .noselect span {
+    transition: 200ms;
+   }
+   
+   .noselect .text {
+    transform: translateX(15px);
+    color: white;
+   }
+   
+   .noselect .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(75px);
+    height: 37px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .noselect svg {
+    width: 15px;
+    fill: #eee;
+   }
+   
+   .noselect:hover {
+    background: #ff3636;
+   }
+   
+   .noselect:hover .text {
+    color: transparent;
+   }
+   
+   .noselect:hover .icon {
+    width: 120px;
+    border-left: none;
+    transform: translateX(0);
+   }
+   
+   .noselect:focus {
+    outline: none;
+   }
+   
+   .noselect:active .icon svg {
+    transform: scale(0.8);
+   }
+
+.modal-table {
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.head {
+    background-color: rgb(255, 191, 31);
+}
+
+.table-itens {
+    height: 70px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.table-data {
+    width: 110px;
+    text-align: center;
+}
+
+.table-horas {
+    width: 110px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+}
+
+.table-notas {
+    text-align: center;
+}
+
+.table-options {
+    width: 50px;
+}
+
+.button1 {
+    --main-focus: #2d8cf0;
+    --font-color: #323232;
+    --bg-color-sub: #dedede;
+    --bg-color: #eee;
+    --main-color: #323232;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .button1, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button1 .button__text {
+    transform: translateX(22px);
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  
+  .button1 .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button1 .svg1 {
+    width: 20px;
+    fill: var(--main-color);
+  }
+  
+  .button1:hover {
+    background: var(--bg-color);
+  }
+  
+  .button1:hover .button__text {
+    color: transparent;
+  }
+  
+  .button1:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button1:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+  }
+
+  .linha-verde {
+    background: rgb(42,196,30);
+    background: linear-gradient(90deg, rgba(42,196,30,0.5) 0%, rgba(95,218,15,0.5) 100%);
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.container {
+    --input-focus: #2d8cf0;
+    --input-out-of-focus: #ccc;
+    --bg-color: #fff;
+    --bg-color-alt: #666;
+    --main-color: #323232;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .checkmark {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--input-out-of-focus);
+    transition: all 0.3s;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: var(--input-focus);
+  }
+  
+  .checkmark:after {
+    content: "";
+    width: 4px;
+    height: 10px;
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    display: none;
+    border: solid var(--bg-color);
+    border-width: 0 2.5px 2.5px 0;
+    transform: rotate(45deg);
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .excluirItem {
+    background-color: transparent;
+    position: relative;
+    border: none;
+    margin-bottom: 8px;
+  }
+  
+  .excluirItem::after {
+    content: 'delete';
+    position: absolute;
+    top: -110%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(168, 7, 7);
+    padding: 4px 8px;
+    border-radius: 5px;
+    transition: .2s linear;
+    transition-delay: .2s;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .icon {
+    transform: scale(1.2);
+    transition: .2s linear;
+  }
+  
+  .excluirItem:hover > .icon {
+    transform: scale(1.5);
+  }
+  
+  .excluirItem:hover > .icon path {
+    fill: rgb(168, 7, 7);
+  }
+  
+  .excluirItem:hover::after {
+    visibility: visible;
+    opacity: 1;
+    top: -160%;
+  }
+  
+.botao-add-item {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.container-links-importantes {
+    background-color: orange;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-importantes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

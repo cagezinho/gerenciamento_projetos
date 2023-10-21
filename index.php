@@ -1,7 +1,7 @@
 <?php 
-    include('../conexao/protect.php');
-    include('../conexao/conexao.php');
-    include('../functions/pesquisa.php');
+    include(' app/conexao/protect.php');
+    include(' app/conexao/conexao.php');
+    include(' app/functions/pesquisa.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">

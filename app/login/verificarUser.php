@@ -37,4 +37,6 @@
             }
         }
     }
+
+    header("location: ../../index.php");
 ?>

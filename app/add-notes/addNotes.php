@@ -13,5 +13,5 @@
 
     $query_item = mysqli_query($mysqli, $adicionar_notas);
 
-    header('location: ../pages/index.php');
+    header('location: ../../index.php');
 ?>

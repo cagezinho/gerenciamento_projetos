@@ -5,7 +5,7 @@
     }
 
     if(!isset($_SESSION['id'])) {
-        header("Location: ../pages/index.php");
+        header("Location: ../../index.php");
     }
 
 ?>

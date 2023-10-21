@@ -10,5 +10,5 @@
 
     $query_apagandoNota = mysqli_query($conexao, $apagandoNota);
 
-    header('location:../pages/index.php');
+    header('location:../../index.php');
 ?>

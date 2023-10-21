@@ -26,7 +26,7 @@
                     $_SESSION['id'] = $usuario['id'];
                     $_SESSION['username'] = $usuario['username'];
 
-                    header("Location: ../pages/index.php");
+                    header("Location: ../../index.php");
                 } else {
                     echo "Falha ao logar! Usuário ou senha incorretos";
                 }

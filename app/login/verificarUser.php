@@ -29,9 +29,11 @@
                     header("Location: ../../index.php");
                 } else {
                     echo "Falha ao logar! Usuário ou senha incorretos";
+                    header("Location: ../../index.php");
                 }
             } else {
                 echo "Falha ao logar! Usuário ou senha incorretos";
+                header("Location: ../../index.php");
             }
         }
     }

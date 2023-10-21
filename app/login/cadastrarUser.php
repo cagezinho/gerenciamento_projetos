@@ -14,4 +14,5 @@
     $query_user = mysqli_query($mysqli, $cadastro_user);
 
     header('location: ../../signin.php');
+    exit;
 ?>

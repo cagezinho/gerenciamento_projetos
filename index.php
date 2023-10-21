@@ -14,8 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles/index.css">
-    <link rel="stylesheet" href="../../styles/painel.css">
+    <link rel="stylesheet" href=" styles/index.css">
+    <link rel="stylesheet" href=" styles/painel.css">
     <title>Home</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
                     <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <span>
-                                <img class="logo" src="../../img/logo-live.png" alt="">
+                                <img class="logo" src=" img/logo-live.png" alt="">
                             </span>
                             <p class="nav-saudacoes">Olá
                                 <?= 
@@ -44,7 +44,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Meu perfil</a></li>
                                 <li><a class="dropdown-item" href="#">Configuração</a></li>
-                                <li><a class="dropdown-item sair" href="../login/logout.php">Sair <img id="img-logout" src="../../img/sign-out-alt.png" alt=""></a></li>
+                                <li><a class="dropdown-item sair" href="login/logout.php">Sair <img id="img-logout" src="img/sign-out-alt.png" alt=""></a></li>
                             </ul>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
             <div class="container-body">
             <div class="row-projetos">
                 <div class="card">
-                    <img src="../../img/fabula.svg" class="card-img-top" alt="...">
+                    <img src="img/fabula.svg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Fábula</h5>
                         <p class="card-text"><strong>GASC:</strong></p>
@@ -84,7 +84,7 @@
                                 </svg>
                         </button>
                         <a href="#" class="link-codice">
-                            <img clasS="link-codice-img" src="../../img/file.svg" alt="Códice">
+                            <img clasS="link-codice-img" src="img/file.svg" alt="Códice">
                         </a>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form action="../add-notes/addNotes.php" class="notas" method="post">
+                                <form action="app/add-notes/addNotes.php" class="notas" method="post">
                                     <label for="notas">Anotação:</label>
                                     <textarea name="notas" id="notas" cols="80" rows="6" required style="resize: none;"></textarea>
                                     <p>A hora atual é <span id="hora"></span> - <span id="data"></span></p>
@@ -138,7 +138,7 @@
                                                     </label>
                                                 </td>
                                                 <td class="table-options"> 
-                                                    <form action="../functions/excluir-nota.php" method="post">
+                                                    <form action="functions/excluir-nota.php" method="post">
                                                         <input type="hidden" name="id" value="<?php echo $id ?>">
                                                         <button class="excluirItem" type="submit">
                                                             <svg viewBox="0 0 15 17.5" height="17.5" width="15" xmlns="http://www.w3.org/2000/svg" class="icon">
@@ -169,7 +169,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
-    <script src="../../js/relogio.js"></script>
+    <script src="js/relogio.js"></script>
     <script>
     // Selecione todos os elementos com o nome "taskCheck"
     var checkboxes = document.querySelectorAll('input[name="taskCheck"]');

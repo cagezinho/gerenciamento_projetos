@@ -5,7 +5,7 @@
     }
 
     if(!isset($_SESSION['id'])) {
-        die("Você não pode acessar essa página! Faça login para continuar.");
+        header("Location: ../pages/index.php");
     }
 
 ?>

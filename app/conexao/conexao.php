@@ -1,9 +1,9 @@
 <?php 
 
-    $host = 'localhost';
-    $user = 'root';
-    $pass = '';
-    $db = 'gerenciamento_projetos';
+    $host = '';
+    $user = 'nicol530_nicolascage';
+    $pass = 'StfHZU4XbAJc4rV';
+    $db = 'nicol530_gerenciamento_projetos';
 
     $mysqli = new mysqli($host, $user, $pass, $db);
 

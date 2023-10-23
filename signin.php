@@ -1,7 +1,7 @@
 <?php
 
-  include(' app/conexao/conexao.php');
-  include (' app/login/verificarUser.php');
+  require_once(' app/conexao/conexao.php');
+  require_once(' app/login/verificarUser.php');
   
 ?>
 

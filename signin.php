@@ -1,7 +1,7 @@
 <?php
 
-  require_once(' app/conexao/conexao.php');
-  require_once(' app/login/verificarUser.php');
+  require_once('app/conexao/conexao.php');
+  require_once('app/login/verificarUser.php');
   
 ?>
 

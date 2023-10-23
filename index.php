@@ -1,7 +1,7 @@
 <?php 
-    include(' app/conexao/protect.php');
-    include(' app/conexao/conexao.php');
-    include(' app/functions/pesquisa.php');
+    require_once(' app/conexao/protect.php');
+    require_once(' app/conexao/conexao.php');
+    require_once(' app/functions/pesquisa.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">

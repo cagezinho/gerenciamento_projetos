@@ -1,5 +1,5 @@
 <?php
-    require('conexao/conexao.php');
+    require('../conexao/conexao.php');
 
     if (isset($_POST['username']) || isset($_POST['password'])) {
         if (strlen($_POST['username']) == 0) {

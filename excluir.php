@@ -8,7 +8,7 @@
     db_tarefas
     WHERE id = '$id'";
 
-    $query_tarefas = mysqli_query($conect, $recebendo_tarefa);
+    $query_tarefas = mysqli_query($conexao, $recebendo_tarefa);
 
     header('location:index.php');
 ?>

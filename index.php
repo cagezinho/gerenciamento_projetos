@@ -2,7 +2,7 @@
     include 'conexao.php';
 
     $buscar_tarefas = 'SELECT * FROM db_tarefas';
-    $query_tarefas = mysqli_query($conect, $buscar_tarefas);
+    $query_tarefas = mysqli_query($conexao, $buscar_tarefas);
 ?>
 
 <!DOCTYPE html>

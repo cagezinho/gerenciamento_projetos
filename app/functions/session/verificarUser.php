@@ -29,7 +29,7 @@ if(isset($_POST['email']) || isset($_POST['pass'])) {
                 $_SESSION['id'] = $usuario['id'];
                 $_SESSION['name'] = $usuario['name'];
 
-                header("Location: ../pages/painel.php");
+                header("Location:https://projetos.nicolascage.dev.br/app/pages/painel.php");
 
             } else {
                 

@@ -1,5 +1,5 @@
 <?php
-    include('conexao.php');
+    include('../conexao/conexao.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1>Crie sua conta</h1>
-    <form action="criarConta.php" method="POST">
+    <form action="../functions/session/criarConta.php" method="POST">
         <p>
             <label>Name</label>
             <input type="text" name="name">

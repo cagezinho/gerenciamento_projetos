@@ -1,5 +1,5 @@
 <?php
-    include('conexao.php');
+    include('../conexao/conexao.php');
 
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -11,6 +11,6 @@
 
     $query_users = mysqli_query($conexao, $criar_conta);
 
-    header('location:login.php');
+    header('location:https://projetos.nicolascage.dev.br/login.php');
 
 ?>

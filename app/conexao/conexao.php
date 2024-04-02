@@ -1,15 +1,15 @@
 <?php 
 
     $host = '';
-    $user = 'nicol530_tarefas';
-    $pass = ';HGS-=x;OK}$';
-    $db = 'nicol530_tarefas';
+    $user = 'nicol530_main';
+    $pass = 'Ooa^FVukFbqK(gdB%O';
+    $db = 'nicol530_main';
 
     $mysqli = new mysqli($host, $user, $pass, $db);
 
     $conexao = mysqli_connect($host, $user, $pass, $db);
 
     if($mysqli->error){
-        die("Falha ao conectar ao banco de dados!");
+        die("Falha ao conectar ao banco de dados!" .$mysqli->error);
     }
 ?>

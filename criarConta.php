@@ -9,7 +9,7 @@
     db_users
     VALUE ('', '$name', '$email', '$pass')";
 
-    $query_users = mysqli_query($mysqli, $criar_conta);
+    $query_users = mysqli_query($conexao, $criar_conta);
 
     header('location:login.php')
 

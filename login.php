@@ -62,23 +62,14 @@
 		</g>
 	</svg>
 
-    <div class="container">
-        <h1>Login</h1>
-        <form action="app/functions/session/verificarUser.php" method="POST">
-            <p>
-                <label>E-mail</label>
-                <input type="text" name="email">
-            </p>
-            <p>
-                <label>Senha</label>
-                <input type="password" name="pass">
-            </p>
-            <p>
-                <button type="submit">Entrar</button>
-            </p>
+    <div class="login wrap">
+        <div class="h1">Login</div>
+        <form action="app/functions/session/verificarUser.php" method="post">
+            <input pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" placeholder="Email" id="email" name="email" type="text">
+            <input placeholder="Password" id="password" name="pass" type="password">
+            <input value="Login" class="btn" type="submit">
         </form>
-    </div>
-
+    </div>  
 
 </body>
 </html>

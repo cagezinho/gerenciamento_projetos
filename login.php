@@ -63,7 +63,7 @@
 	</svg>
 
     <div class="login wrap">
-        <div class="h1">Login</div>
+        <img src="app/image/logo_liveseo.webp" alt="">
         <form action="app/functions/session/verificarUser.php" method="post">
             <input pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" placeholder="Email" id="email" name="email" type="text">
             <input placeholder="Password" id="password" name="pass" type="password">

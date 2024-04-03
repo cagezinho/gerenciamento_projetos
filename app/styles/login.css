@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 form {
@@ -30,12 +31,15 @@ svg {
     z-index: -100;
 }
 
+img {
+    width: 200px;;
+}
+
 .login {
-  width: 340px;
-  height: 400px;
+    width: 340px;
+    height: 400px;
   background: #2c2c2c;
   padding: 47px;
-  padding-bottom: 57px;
   color: #fff;
   border-radius: 17px;
   padding-bottom: 50px;

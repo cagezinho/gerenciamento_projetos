@@ -67,7 +67,7 @@
         <form action="app/functions/session/verificarUser.php" method="post">
             <input placeholder="Email" id="email" name="email" type="text">
             <input placeholder="Password" id="password" name="pass" type="password">
-            <button value="Login" class="btn" type="submit">Login</button>
+            <input value="Login" class="btn" type="submit">
         </form>
     </div>  
 

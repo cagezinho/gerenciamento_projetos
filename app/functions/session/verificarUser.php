@@ -32,7 +32,7 @@
                 header("Location:https://projetos.nicolascage.dev.br/app/pages/painel.php");
 
             } else {
-                
+                header("Location:https://projetos.nicolascage.dev.br/app/pages/painel.php");
             }
             
         }

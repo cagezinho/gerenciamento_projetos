@@ -32,7 +32,7 @@ if(isset($_POST['email']) || isset($_POST['pass'])) {
                 header("Location:https://projetos.nicolascage.dev.br/app/pages/painel.php");
 
             } else {
-                header("location:https://projetos.nicolascage.dev.br/login.php"); //se os dados estiverem invalidos
+                
             }
             header("location:https://projetos.nicolascage.dev.br/login.php"); //se os dados estiverem invalidos
         }

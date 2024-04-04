@@ -37,7 +37,6 @@
             
         }
 
-        header("location:https://projetos.nicolascage.dev.br/login.php"); //se os dados estiverem invalidos
     }
 
 ?>

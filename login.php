@@ -71,7 +71,7 @@
         <input type="password" placeholder="Password" name="pass" class="input">
         <div class="buttons">
             <button type="submit" class="button-confirm">Entrar</button>
-            <button class="button-confirm">Criar conta</button>
+            <a href="app/pages/criar-conta.php" class="button-create">Criar conta</a>
         </div>
 
     </form>

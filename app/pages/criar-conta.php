@@ -2,31 +2,79 @@
     include('../functions/conexao/conexao.php');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/login.css">
     <title>Criar Conta</title>
 </head>
 <body>
-    <h1>Crie sua conta</h1>
-    <form action="../functions/session/criarConta.php" method="POST">
-        <p>
-            <label>Name</label>
-            <input type="text" name="name">
-        </p>
-        <p>
-            <label>E-mail</label>
-            <input type="text" name="email">
-        </p>
-        <p>
-            <label>Senha</label>
-            <input type="password" name="pass">
-        </p>
-        <p>
-            <button type="submit">Criar Conta</button>
-        </p>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+		<defs>
+			<linearGradient id="bg">
+				<stop offset="0%" style="stop-color:rgba(0, 0, 0, 0.945);"></stop>
+				<stop offset="50%" style="stop-color:rgba(30, 30, 30, 0.884)"></stop>
+				<stop offset="100%" style="stop-color:rgba(65, 65, 65, 0.904)"></stop>
+			</linearGradient>
+			<path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+	s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+		</defs>
+		<g>
+			<use xlink:href='#wave' opacity=".3">
+				<animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="10s"
+                    calcMode="spline"
+                    values="270 230; -334 180; 270 230"
+                    keyTimes="0; .5; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite" />
+			</use>
+			<use xlink:href='#wave' opacity=".6">
+				<animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="8s"
+                    calcMode="spline"
+                    values="-270 230;243 220;-270 230"
+                    keyTimes="0; .6; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite" />
+			</use>
+			<use xlink:href='#wave' opacty=".9">
+				<animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="6s"
+                    calcMode="spline"
+                    values="0 230;-140 200;0 230"
+                    keyTimes="0; .4; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite" />
+			</use>
+		</g>
+	</svg> 
+
+    <form class="form" action="../functions/session/criarConta.php" method="post">
+        <div class="title">Bem-vindo,<br><span>crie sua conta</span></div>
+        <input type="text" placeholder="Name" name="name" class="input">
+        <input type="text" placeholder="Email" name="email" class="input">
+        <input type="password" placeholder="Password" name="pass" class="input">
+        <div class="buttons">
+            <button type="submit" class="button-confirm">Criar conta</button>
+            <a href="../../login.php" class="button-create">Fazer login</a>
+        </div>
     </form>
+
 </body>
 </html>

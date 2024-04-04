@@ -10,9 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: rgb(0, 0, 0);
-    color: rgb(30, 30, 30);
-    color: rgb(65, 65, 65);
+    z-index: -100;
 }
 
 svg {
@@ -43,6 +41,7 @@ svg {
   border-radius: 5px;
   border: 2px solid var(--main-color);
   box-shadow: 4px 4px var(--main-color);
+  z-index: 100;
 }
 
 .title {

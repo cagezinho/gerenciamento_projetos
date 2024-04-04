@@ -66,10 +66,11 @@
 	</svg> 
 
     <form class="form" action="app/functions/session/verificarUser.php" method="post">
-        <div class="title">Welcome,<br><span>sign up to continue</span></div>
+        <div class="title">Bem-vindo,<br><span>faça login para continuar</span></div>
         <input type="text" placeholder="Email" name="email" class="input">
         <input type="password" placeholder="Password" name="pass" class="input">
-        <button type="submit" class="button-confirm">Let`s go →</button>
+        <button type="submit" class="button-confirm">Entrar</button>
+        <button class="button-confirm">Criar conta</button>
     </form>
 
 </body>

@@ -5,9 +5,9 @@
 if(isset($_POST['email']) || isset($_POST['pass'])) {
 
         if(strlen($_POST['email']) == 0) {
-            header("location:https://projetos.nicolascage.dev.br/login.php");
+            header("location:https://projetos.nicolascage.dev.br/login.php"); //se o campo do email estiver vazio
         } else if(strlen($_POST['pass']) == 0) {
-            header("location:https://projetos.nicolascage.dev.br/login.php");
+            header("location:https://projetos.nicolascage.dev.br/login.php"); //se o campo da senha estiver vazio
         } else {
 
             $email = $mysqli->real_escape_string($_POST['email']);
@@ -32,7 +32,7 @@ if(isset($_POST['email']) || isset($_POST['pass'])) {
                 header("Location:https://projetos.nicolascage.dev.br/app/pages/painel.php");
 
             } else {
-                
+                header("location:https://projetos.nicolascage.dev.br/login.php"); //se os dados estiverem invalidos
             }
 
         }

@@ -133,4 +133,8 @@ svg {
   font-weight: 600;
   color: var(--font-color);
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

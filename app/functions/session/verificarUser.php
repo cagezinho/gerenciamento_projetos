@@ -34,7 +34,7 @@ if(isset($_POST['email']) || isset($_POST['pass'])) {
             } else {
                 header("location:https://projetos.nicolascage.dev.br/login.php"); //se os dados estiverem invalidos
             }
-
+            header("location:https://projetos.nicolascage.dev.br/login.php"); //se os dados estiverem invalidos
         }
 
     }

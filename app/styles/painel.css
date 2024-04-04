@@ -6,3 +6,11 @@
     font-family: "Montserrat", sans-serif;
     font-style: normal;
   }
+
+.sidebar {
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(31, 31, 31);
+    position: fixed;
+    left: 0;
+}

@@ -2,7 +2,7 @@
 
   include('../conexao/conexao.php');
 
-if(isset($_POST['email']) || isset($_POST['pass'])) {
+    if(isset($_POST['email']) || isset($_POST['pass'])) {
 
         if(strlen($_POST['email']) == 0) {
             header("location:https://projetos.nicolascage.dev.br/login.php"); //se o campo do email estiver vazio
@@ -34,9 +34,10 @@ if(isset($_POST['email']) || isset($_POST['pass'])) {
             } else {
                 
             }
-            header("location:https://projetos.nicolascage.dev.br/login.php"); //se os dados estiverem invalidos
+            
         }
 
+        header("location:https://projetos.nicolascage.dev.br/login.php"); //se os dados estiverem invalidos
     }
 
 ?>

@@ -5,9 +5,9 @@
 if(isset($_POST['email']) || isset($_POST['pass'])) {
 
         if(strlen($_POST['email']) == 0) {
-            
+            header("location:https://projetos.nicolascage.dev.br/login.php");
         } else if(strlen($_POST['pass']) == 0) {
-            
+            header("location:https://projetos.nicolascage.dev.br/login.php");
         } else {
 
             $email = $mysqli->real_escape_string($_POST['email']);

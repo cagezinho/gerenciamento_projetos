@@ -76,5 +76,13 @@
 
     </form>
 
+
+    <script>
+        let url = window.location.href;
+
+        if (url == 'https://projetos.nicolascage.dev.br/login.php?erro=usuario') {
+            alert('Usuário incorreto');
+        }
+    </script>
 </body>
 </html>

@@ -67,7 +67,7 @@
 
     <form class="form" action="app/functions/session/verificarUser.php" method="post">
         <div class="title">Bem-vindo,<br><span>faça login para continuar</span></div>
-        <input type="text" placeholder="Email" name="email" class="input">
+        <input type="text" placeholder="Email" name="email" class="input" id="email">
         <input type="password" placeholder="Password" name="pass" class="input">
         <div class="buttons">
             <button type="submit" class="button-confirm">Entrar</button>
@@ -78,10 +78,11 @@
 
 
     <script>
-        let url = window.location.href;
+        const url = window.location.href;
 
-        if (url == 'https://projetos.nicolascage.dev.br/login.php?erro=usuario') {
-            alert('Usuário incorreto');
+        if (url.includes('?erro=usuario')) {
+            const mensagemErro = document.getElementById('email');
+            mensagemErro.style.color = 'red'; // Altera a cor da mensagem
         }
     </script>
 </body>

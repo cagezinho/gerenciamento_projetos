@@ -13,7 +13,9 @@
             $email = $mysqli->real_escape_string($_POST['email']);
             $pass = $mysqli->real_escape_string($_POST['pass']);
 
-            $sql_code = "SELECT * FROM db_users WHERE email = '$email' AND pass = '$pass'";
+            $pass_verify = password_verify($pass, PASSWORD_DEFAULT);
+
+            $sql_code = "SELECT * FROM db_users WHERE email = '$email' AND pass = '$pass_verify'";
             $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
 
             $quantidade = $sql_query->num_rows;

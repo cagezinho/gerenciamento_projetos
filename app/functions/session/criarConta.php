@@ -2,7 +2,8 @@
     include('../conexao/conexao.php');
 
     if($_POST['name'] == 0 || $_POST['email'] == 0 || $_POST['pass'] == 0) {
-        header('location: https:projetos.nicolascage.dev.br/app/pages/criar-conta.php');
+        header('location:https:projetos.nicolascage.dev.br/app/pages/criar-conta.php');
+        exit;
     } else {
         $name = $_POST['name'];
         $email = $_POST['email'];

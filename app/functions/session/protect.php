@@ -5,9 +5,8 @@
     }
 
     if(!isset($_SESSION['id'])) {
-        header("location:https://www.google.com.br");
+        header("location:https://projetos.nicolascage.dev.br/login.php");
         exit;
     }
-
 
 ?>

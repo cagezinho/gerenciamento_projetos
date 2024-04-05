@@ -82,7 +82,7 @@
 
         if (url.includes('?erro=usuario')) {
             const mensagemErro = document.getElementById('email');
-            mensagemErro.style.color = 'red'; // Altera a cor da mensagem
+            mensagemErro.style.backgroundColor = 'red'; // Altera a cor da mensagem
         }
     </script>
 </body>

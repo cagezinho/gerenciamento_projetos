@@ -77,6 +77,6 @@
 
     </form>
 
-    <script async src="../gerenciamento_projetos/app/functions/scripts/login.js"></script>
+    <script src="../gerenciamento_projetos/app/functions/scripts/login.js"></script>
 </body>
 </html>

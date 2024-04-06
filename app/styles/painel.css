@@ -31,7 +31,7 @@ main {
   width: 80px;
 }
 
-.logo > span {
+.logo > p {
   color: white;
   font-size: 20px;
 }

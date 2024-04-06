@@ -28,7 +28,11 @@ main {
 }
 
 .logo > img {
-  width: 25px;
+  width: 50px;
+}
+
+.logo > span {
+  color: white;
 }
 
 .container-principal {

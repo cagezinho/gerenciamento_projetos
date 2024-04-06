@@ -33,6 +33,7 @@ main {
 
 .logo > span {
   color: white;
+  font-size: 20px;
 }
 
 .container-principal {

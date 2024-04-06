@@ -8,13 +8,14 @@
 }
 
 main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 260px 1fr;
   height: 100vh;
   width: 100%;
 }
 
 .sidebar {
-  width: 260px;
+  width: 100%;  /* Remove fixed width for grid */
   height: 100vh;
   background-color: rgb(31, 31, 31);
   position: fixed;
@@ -22,7 +23,6 @@ main {
 }
 
 .container-principal {
-  flex: 1;  /* Ajusta o container principal para ocupar o espaço restante */
   height: auto;
   background-color: #d8d8d8;
   width: 100%;

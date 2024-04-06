@@ -21,13 +21,16 @@
             <a class="logout" href="../functions/session/logout.php">Sair</a>
         </div>
 
-        <div class="header">
-            <!-- minimizar sidebar -->
-            <!-- profile -->
-        </div>
         <div class="container">
+            <div class="header">
+                <!-- minimizar sidebar -->
+                <!-- profile -->
+            </div>
+            <div class="content">
 
+            </div>
         </div>
+
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

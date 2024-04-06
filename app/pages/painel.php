@@ -12,21 +12,12 @@
     <title>Painel</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <p class="navbar-brand" href="#" style="margin-bottom: 0px;">Bem-vindo ao painel, <?php echo $_SESSION['name']; ?>.</p>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <span class="navbar-text">
-                <a class="logout" href="../functions/session/logout.php">Sair</a>
-                </span>
-            </div>
-        </div>
-    </nav>
+
     <div class="sidebar">
-        
+        <div class="profile">
+            <p href="#">Bem-vindo ao painel, <?php echo $_SESSION['name']; ?>.</p>
+        </div>
+        <a class="logout" href="../functions/session/logout.php">Sair</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

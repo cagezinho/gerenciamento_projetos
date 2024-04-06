@@ -68,7 +68,8 @@
     <form class="form" action="app/functions/session/verificarUser.php" method="post">
         <div class="title">Bem-vindo,<br><span>faça login para continuar</span></div>
         <input type="text" placeholder="Email" name="email" class="input" id="email">
-        <input type="password" placeholder="Password" name="pass" class="input">
+        <input type="password" placeholder="Password" name="pass" class="input" id="pass">
+        <span id="erro" style="display: none;">usuário ou senha incorreta</span>
         <div class="buttons">
             <button type="submit" class="button-confirm">Entrar</button>
             <a href="app/pages/criar-conta.php" class="button-create">Criar conta</a>
@@ -80,9 +81,9 @@
     <script>
         const url = window.location.href;
 
-        if (url.includes('?erro=usuario')) {
-            const mensagemErro = document.getElementById('email');
-            mensagemErro.style.backgroundColor = 'red'; // Altera a cor da mensagem
+        if (url.includes('?erro')) {
+            const erro = document.getElementById('erro')
+            erro.style.display = 'block'; // 
         }
     </script>
 </body>

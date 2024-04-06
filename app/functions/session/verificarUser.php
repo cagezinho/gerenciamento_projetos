@@ -35,11 +35,11 @@ if (isset($_POST['email']) || isset($_POST['pass'])) {
                 header("Location:https://projetos.nicolascage.dev.br/app/pages/painel.php");
 
             } else {
-                header("Location:https://projetos.nicolascage.dev.br/login.php?erro=senha"); // Senha incorreta
+                header("Location:https://projetos.nicolascage.dev.br/login.php?erro"); // Senha incorreta
             }
 
         } else {
-            header("Location:https://projetos.nicolascage.dev.br/login.php?erro=usuario"); // Usuário não encontrado
+            header("Location:https://projetos.nicolascage.dev.br/login.php?erro"); // Usuário não encontrado
         }
 
     }

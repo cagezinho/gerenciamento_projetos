@@ -22,6 +22,7 @@ main {
 }
 
 .container-principal {
+  flex: 1;
   height: auto;
   background-color: #d8d8d8;
   width: 100%;

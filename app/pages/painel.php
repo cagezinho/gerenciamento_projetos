@@ -15,10 +15,14 @@
 
   <main>
     <div class="sidebar">
-      <div class="profile">
-        <p href="#">Bem-vindo ao painel, <?php echo $_SESSION['name']; ?>.</p>
-      </div>
-      <a class="logout" href="../functions/session/logout.php">Sair</a>
+        <div class="logo">
+            <img src="../image/png-transparent-logo-graphic-design-systems-design-industry-circulating-lines-company-service-happy-birthday-vector-images.png" alt="">
+            <span>E-Corp</span>
+        </div>
+        <div class="profile">
+            <p href="#">Bem-vindo ao painel, <?php echo $_SESSION['name']; ?>.</p>
+        </div>
+        <a class="logout" href="../functions/session/logout.php">Sair</a>
     </div>
 
     <div class="container-principal">

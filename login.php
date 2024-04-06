@@ -77,14 +77,6 @@
 
     </form>
 
-
-    <script>
-        const url = window.location.href;
-
-        if (url.includes('?erro')) {
-            const erro = document.getElementById('erro')
-            erro.style.display = 'block'; // 
-        }
-    </script>
+    <script async src="../gerenciamento_projetos/app/functions/scripts/login.js"></script>
 </body>
 </html>

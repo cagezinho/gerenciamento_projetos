@@ -16,7 +16,7 @@
   <main>
     <div class="sidebar">
         <div class="logo">
-            <img src="../image/png-transparent-logo-graphic-design-systems-design-industry-circulating-lines-company-service-happy-birthday-vector-images.png" alt="">
+            <img src="../image/Inserir_um_título-removebg-preview.png" alt="">
             <span>E-Corp</span>
         </div>
         <div class="profile">

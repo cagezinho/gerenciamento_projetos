@@ -20,6 +20,13 @@ main {
   background-color: rgb(31, 31, 31);
 }
 
+.logo {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container-principal {
   height: auto;
   background-color: #ffffff;

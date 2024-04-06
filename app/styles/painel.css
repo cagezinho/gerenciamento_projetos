@@ -31,7 +31,6 @@ main {
 
 .logo > img {
   width: 80px;
-  box-shadow: 5px 5px 5px 0px rgba(192, 192, 192, 0.295)
 }
 
 .logo > p {

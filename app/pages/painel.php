@@ -21,7 +21,7 @@
             <a class="logout" href="../functions/session/logout.php">Sair</a>
         </div>
 
-        <div class="container">
+        <div class="container-principal">
             <div class="header">
                 <!-- minimizar sidebar -->
                 <!-- profile -->

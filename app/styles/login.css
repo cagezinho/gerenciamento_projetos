@@ -138,3 +138,8 @@ svg {
   justify-content: center;
   align-items: center;
 }
+
+#erro {
+  display: none;
+  color: red;
+}

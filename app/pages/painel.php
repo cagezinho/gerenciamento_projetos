@@ -16,11 +16,10 @@
   <main>
     <div class="sidebar">
         <div class="logo">
-            <img src="../image/Inserir_um_título-removebg-preview.png" alt="">
             <p>E-Corp</p>
         </div>
         <div class="profile">
-            <p href="#">Bem-vindo ao painel, <?php echo $_SESSION['name']; ?>.</p>
+            <p href="#"><?php echo $_SESSION['name']; ?></p>
         </div>
         <a class="logout" href="../functions/session/logout.php">Sair</a>
     </div>

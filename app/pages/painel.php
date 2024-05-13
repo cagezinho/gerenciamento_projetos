@@ -16,7 +16,7 @@
   <main>
     <div class="sidebar">
         <div class="logo">
-            <img src="../image/logo-liveseo.png" alt="Logo da empresa liveSEO">
+            <img src="../image/logo-white.png" alt="Logo da empresa liveSEO">
         </div> <!-- logo -->
         <div class="profile">
             <p><?php echo $_SESSION['name']; ?></p>
@@ -26,32 +26,59 @@
         </div> <!-- sidebar-footer -->
     </div> <!-- sidebar -->
 
-    <div class="container-principal">
-      <div class="header">
+<!-- SIDEBAR --------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-      </div> <!-- header -->
-      <div class="content">
+<!-- container-principal -->
+<div class="container-principal">
+    <!-- header -->
+    <div class="header">
+        <!-- Formulário para criar card -->
+        <form id="criarCardForm" action="../functions/scripts/criar-card.php" method="post">
+            <button type="button" id="criarCardBtn">Criar Card</button>
+        </form>
+    </div> <!-- header -->
+
+    <!-- content -->
+    <div class="content">
+        <!-- Container para os cards -->
         <div class="content-tarefas">
-          <div class="content-tarefas-header">
-            <h1>Projetos</h1>
-          </div> <!-- content-tarefas-header -->
-            <div class="content-tarefas-main">
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="Imagem do projeto">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div> <!-- card-body -->
-            </div>
-          </div> <!-- content-tarefas-main -->
+            <!-- content-tarefas-header -->
+            <div class="content-tarefas-header">
+                <h1>Projetos</h1>
+            </div> <!-- content-tarefas-header -->
+
+            <!-- content-tarefas-main -->
+            <div class="content-tarefas-main" id="cardsContainer">
+                <!-- Aqui serão inseridos os cards dinamicamente -->
+            </div> <!-- content-tarefas-main -->
         </div><!-- content-tarefas -->
-      </div><!-- content -->
-    </div><!--container-principal -->
+    </div><!-- content -->
+</div><!--container-principal -->
+
 
   </main>
 
+
+  <!-- SCRIPTS --------------------------------------------------------------------------------------------------------------------------------------------- -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('criarCardBtn').addEventListener('click', function() {
+        // Requisição AJAX para criar o card
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '../functions/scripts/criar-card.php', true);
+        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                // Adicionar o novo card ao container
+                document.getElementById('cardsContainer').innerHTML += xhr.responseText;
+            }
+        };
+        xhr.send();
+    });
+});
+
+  </script>
 </body>
 </html>

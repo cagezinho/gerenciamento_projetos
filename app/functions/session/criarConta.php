@@ -12,7 +12,7 @@
         $pass = $_POST['pass'];
         
         $pass_hash = password_hash($pass, PASSWORD_DEFAULT);
-    
+
         $criar_conta = "INSERT INTO
         db_users
         VALUE ('', '$name', '$email', '$pass_hash')";

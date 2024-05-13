@@ -16,23 +16,38 @@
   <main>
     <div class="sidebar">
         <div class="logo">
-            <p>E-Corp</p>
-        </div>
+            <img src="../image/logo-liveseo.png" alt="Logo da empresa liveSEO">
+        </div> <!-- logo -->
         <div class="profile">
-            <p href="#"><?php echo $_SESSION['name']; ?></p>
-        </div>
-        <a class="logout" href="../functions/session/logout.php">Sair</a>
-    </div>
+            <p><?php echo $_SESSION['name']; ?></p>
+        </div> <!-- profile -->
+        <div class="sidebar-footer">
+          <a class="logout" href="../functions/session/logout.php">Sair</a>
+        </div> <!-- sidebar-footer -->
+    </div> <!-- sidebar -->
 
     <div class="container-principal">
       <div class="header">
-        </div>
+
+      </div> <!-- header -->
       <div class="content">
         <div class="content-tarefas">
-            <h1>Lista de tarefas</h1>
-        </div>
-      </div>
-    </div>
+          <div class="content-tarefas-header">
+            <h1>Projetos</h1>
+          </div> <!-- content-tarefas-header -->
+            <div class="content-tarefas-main">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="Imagem do projeto">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div> <!-- card-body -->
+            </div>
+          </div> <!-- content-tarefas-main -->
+        </div><!-- content-tarefas -->
+      </div><!-- content -->
+    </div><!--container-principal -->
 
   </main>
 

@@ -30,13 +30,32 @@ main {
 }
 
 .logo > img {
-  width: 80px;
+  width: 100px;
 }
 
-.logo > p {
+.profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.profile > p {
   color: white;
-  font-size: 36px;
-  margin-bottom: 0px !important;
+  font-weight: 500;
+  font-size: 20pt
+}
+
+.sidebar-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout {
+  color: white;
+  text-decoration: none;
+  font-size: 14pt;
+  font-weight: 500;
 }
 
 .container-principal {
@@ -64,4 +83,8 @@ main {
 .content-tarefas {
   width: 100%;
   background-color: aqua;
+}
+
+.content-tarefas > h1 {
+  color: black;
 }
